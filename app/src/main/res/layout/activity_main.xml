@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="计算器"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/head"
+        android:text="一级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/head"
+        android:text="0"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text1"
+        android:text="二级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit1"
+        android:text="0"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text2"
+        android:text="三级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit2"
+        android:text="0"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text3"
+        android:text="四级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit3"
+        android:text="0"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text4"
+        android:text="五级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit5"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit4"
+        android:text="0"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text5"
+        android:text="六级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit6"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit5"
+        android:text="0"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text6"
+        android:text="七级数量:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit7"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit6"
+        android:inputType="none"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text7"
+        android:text="效率:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/speedEdit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit7"
+        android:text="0"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/speedText"
+        android:layout_centerInParent="true"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerText"
+        android:layout_centerHorizontal="true"
+        android:text="计算"/>
+
+
+</RelativeLayout>
